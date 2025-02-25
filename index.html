@@ -13,11 +13,17 @@
         
         <div class="container">
             <div class="input-container">
-                <input type="text" id="taskInput" placeholder="Add Task...">
-                <button onclick="addTask()">Add</button>
+                <input class="inp"type="text" id="taskInput" placeholder="Add Task..." onkeypress="handleKeyPress(event)">
+                <button class="btn" onclick="addTask()">Add</button>
+                
             </div>
-            <h3>List Of Tasks</h3>
+            <h2 id="lo">List Of Tasks</h2>
             <ul id="taskList"></ul>
+            <div class="undoredo">
+                <button  class="new" onclick="undo()">Undo</button>
+                <button class="new" onclick="redo()">Redo</button>
+                <p class="progress" id="completed">Completed: <span id="completedCount">0</span> / <span id="totalCount">0</span></p>
+        </div>
         </div>
 
         <div class="footer">
