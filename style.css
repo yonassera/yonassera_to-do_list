@@ -1,12 +1,12 @@
 body{
-    color: blue;
+    color: #4CAF50;
     display: flex;
     flex-direction: column;
     min-height: 98vh; /* Makes the body fill the full viewport height */
 }
 
 .header{
-    background-color: blue;
+    background-color: #4CAF50;
     color: white;
     font-weight: bold;
     padding-left: 10px;
@@ -18,7 +18,7 @@ body{
 }
 .footer{
     margin-top: auto;
-    background-color: blue;
+    background-color: #4CAF50;
     color: white;
     font-weight: bold;
     padding: 5px;
@@ -35,7 +35,7 @@ img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 2px solid rgb(3, 0, 164);
+    border: 2px solid rgb(4, 158, 45);
 }
 
 .container{
@@ -44,10 +44,10 @@ img{
     margin: auto;
     flex-grow: 0;
     margin: 30px auto;
-    border: 3px solid blue;
+    border: 3px solid #4CAF50;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 76, 252, 0.8);
+    box-shadow: 0 0 10px rgba(10, 228, 112, 0.53);
 }
 .input-container{
     display: flex;
@@ -56,29 +56,64 @@ img{
     align-items: center;
     margin-bottom: 15px;
 }
-input {
-    width: 70%;
-    padding: 8px;
-    border: 2px solid blue;
-    border-radius: 10px;
+
+.undoredo{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+}
+#completed{
+    font-weight: bolder;
+    margin-left: 10px;
 }
 
+input{
+    width: 80%;
+    border: none;
+    background: rgb(227, 243, 230);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#taskInput {
+    width: 70%;
+    padding: 8px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background: transparent;
+}
 button{
-    border: 2px solid blue;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 5px;
+    color: #4CAF50;
+}
+.btn{
+    border: 2px solid #4CAF50;
     border-radius: 10px;
     padding: 8px;
-    color: blue;
+    color: #4CAF50;
+}
+.new{
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    padding: 3px;
+    color: #4CAF50;
 }
 button:hover{
     color: white;
-    background-color: blue;
-    box-shadow: 0 6px 12px rgba(0, 0, 255, 0.3);
+    background-color: #4CAF50;
+    box-shadow: 0 6px 12px rgba(6, 239, 76, 0.3);
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: -10px;
+    color: black;
+    font-weight: bold;
 }
 li {
     padding: 5px;
@@ -91,4 +126,13 @@ li input[type="checkbox"] {
     margin: 0;
     width: 16px;
     height: 16px;
+}
+
+#lo{
+position: relative;
+text-align: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
 }
